@@ -1,8 +1,8 @@
-function Application(){
+function Application(props){
   return(
     <div className="scoreboard">
       <div className="header">
-      <h1>Scorebord</h1>
+      <h1>{props.title}</h1>
       </div>
 
       <div className="players">
@@ -33,9 +33,7 @@ function Application(){
     </div>
     </div>
   </div>
-
-
   );
 }
 
-ReactDOM.render(<Application />, document.getElementById('container'));
+ReactDOM.render(<Application title="My Scoreboard"/>, document.getElementById('container'));
