@@ -1,9 +1,40 @@
 function Application(){
   return(
-    <div>
-      <h1>Hello from react</h1>
-      <p>I was rendered from the application component!</p>
+    <div className="scoreboard">
+      <div className="header">
+      <h1>Scorebord</h1>
+      </div>
+
+      <div className="players">
+        <div className="player">
+          <div className="player-name">
+          Peter Pess
+          </div>
+          <div className="player-score">
+            <div className ="counter">
+              <button className="counter-action decrement"> - </button>
+              <div className="counter-score"> 35 </div>
+              <button className="counter-action increment"> + </button>
+            </div>
+          </div>
+      </div>
+
+      <div className="player">
+        <div className="player-name">
+        Heike Schrunz
+        </div>
+        <div className="player-score">
+          <div className ="counter">
+            <button className="counter-action decrement"> - </button>
+            <div className="counter-score"> 564 </div>
+            <button className="counter-action increment"> + </button>
+          </div>
+        </div>
     </div>
+    </div>
+  </div>
+
+
   );
 }
 
